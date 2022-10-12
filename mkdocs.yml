@@ -1,0 +1,34 @@
+site_name: StrucEng Library
+site_url: https://strucenglib.ch
+
+
+theme:
+  name: material
+  custom_dir: overrides
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+
+include_sidebar: false
+
+txt_home_title: >-
+  A toolbox for the structural analysis of reinforced concrete and masonry.
+txt_home_description: >-
+
+
+
+extra_javascript:
+  - assets/code.js
+extra_css:
+  - assets/style.css
+
+copyright: Copyright &copy; 2022, The StrucEng Library Authors
+
+extra:
+  generator: false
+
+nav:
+  - Home: index.md
+  - Tutorial: tutorial.md
+  - Documentation: documentation.md
+  - About: about.md
