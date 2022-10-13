@@ -9,11 +9,7 @@ theme:
     - navigation.tabs
     - navigation.tabs.sticky
 
-include_sidebar: false
 
-txt_home_title: >-
-  A toolbox for the structural analysis of reinforced concrete and masonry.
-txt_home_description: >-
 
 
 
@@ -28,7 +24,8 @@ extra:
   generator: false
 
 nav:
-  - Home: index.md
-  - Tutorial: tutorial.md
+  - Home: home.md
+  - Features: tutorial.md
+  - Get Started: get_started.md
   - Documentation: documentation.md
   - About: about.md
