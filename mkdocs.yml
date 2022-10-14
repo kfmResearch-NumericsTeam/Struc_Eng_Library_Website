@@ -66,12 +66,15 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - Features: tutorial.md
+  - Features: features.md
   - Getting Started:
       - Prerequisites: install/getting_started.md
       - Installation: install/installation.md
-  - Tutorials: usage_guide.md
+      - Usage Guide:  install/installation.md
   - Documentation:
       - Mechanical Models: documentation.md
       - Rhinoceros 3D Plugin: documentation.md
+  - Developer Notes:
+      - Compas and Compas FEA: developer_notes.md
+      - Rhinoceros 3D Plugin: developer_notes.md
   - About: about.md
