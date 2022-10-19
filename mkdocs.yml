@@ -1,7 +1,7 @@
-site_name: StrucEng Library
+site_name: The StrucEng Library Project
 site_url: https://strucenglib.ch
 site_description: >-
-  The StrucEng Library Project Site
+  StrucEng Library
 
 repo_name: kfmResearch-NumericsTeam/Struc_Eng_Library_Website
 repo_url: https://github.com/kfmResearch-NumericsTeam/Struc_Eng_Library_Website
@@ -28,7 +28,6 @@ theme:
     - navigation.sections
     - navigation.tabs
     - navigation.tabs.sticky
-    - navigation.top
     - navigation.tracking
     - search.highlight
     - search.share
@@ -66,15 +65,19 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - Features: features.md
-  - Getting Started:
-      - Prerequisites: install/getting_started.md
-      - Installation: install/installation.md
-      - Usage Guide:  install/installation.md
-  - Documentation:
-      - Mechanical Models: documentation.md
-      - Rhinoceros 3D Plugin: documentation.md
-  - Developer Notes:
-      - Compas and Compas FEA: developer_notes.md
-      - Rhinoceros 3D Plugin: developer_notes.md
+  - Getting Started: about.md
+  - 'Rhino 3D Integration':
+      - Features: features.md
+      - Installation:
+          - Prerequisites: install/getting_started.md
+          - Installation: install/installation.md
+      - Documentation:
+          - Usage Guide:  install/installation.md
+      - For Developers:
+          - Source Code: install/installation.md
+          - Internals: install/installation.md
+  - 'URM-Usermat':
+      - about.md
+  - 'Load Generators':
+      - about.md
   - About: about.md
