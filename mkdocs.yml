@@ -68,6 +68,8 @@ nav:
       - Installation:
           - Prerequisites: strucenglib_plugin/getting_started.md
           - Installation: strucenglib_plugin/installation.md
+      - Developer:
+          Developer Notes: strucenglib_plugin/developer/developer.md
   - 'Other Component':
       - other_component/home.md
   - About: about.md
