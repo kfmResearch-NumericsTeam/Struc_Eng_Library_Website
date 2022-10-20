@@ -46,7 +46,6 @@ theme:
 
 
 
-
 extra_javascript:
   - assets/code.js
 extra_css:
@@ -65,9 +64,10 @@ nav:
   - Home: index.md
   - 'See in Action': action.md
   - 'Rhino 3D Plugin':
+      - The StrucEng Lib Plugin: strucenglib_plugin/home.md
       - Installation:
           - Prerequisites: strucenglib_plugin/getting_started.md
           - Installation: strucenglib_plugin/installation.md
-  - 'URM-Usermat':
-      - test.md
+  - 'Other Component':
+      - other_component/home.md
   - About: about.md

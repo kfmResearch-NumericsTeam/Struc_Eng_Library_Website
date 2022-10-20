@@ -2,35 +2,10 @@
 {% block tabs %}
 {{ super() }}
 <style>
-    /* ==== CSS VARIABLES ==== */
-
-    body {
-        /* background-color: var(--header-color); */
-        /* background-color: white; */
-
-        /* background-color: #EFE9DA; */
-        /* background-color: #FFFFFF; */
-        /* background-color: #795649; */
-        /* font-family: 'Gothic A1', sans-serif !important; */
-
-
-    }
-
-
     .md-main__inner {
         margin: 0;
     }
 
-
-
-    h1 {
-
-
-
-        /* color: #1F1F1F; */
-    }
-
-    /* Hide main content for now */
     .md-content {
         display: none;
     }
@@ -53,10 +28,8 @@
 
 
 <style>
-    /* ==== "Inter" FONT-FAMILY FROM FONTS.GOOGLE.COM  ==== */
     @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
 
-    /* ==== ROOT RESET ==== */
     * {
         margin: 0;
         padding: 0;
@@ -70,10 +43,6 @@
         box-sizing: border-box;
     }
 
-
-    /* ==== RESET HTML ==== */
-
-    /* ==== CONTAINER ==== */
     .container {
         width: 100%;
     }
@@ -85,21 +54,17 @@
         }
     }
 
-    /* ==== HEADER ==== */
     .header {
         height: var(--fixed-header-height);
         padding: 0 1.7rem;
     }
 
-
-    /* ====  WRAPPER ==== */
     .wrapper {
         width: 100%;
         padding-left: 1rem;
         padding-right: 1rem;
         padding-top: 2rem;
         padding-bottom: 2rem;
-        /* margin-bottom: 1rem; */
     }
 
     .grid-cols-2 {
@@ -154,7 +119,6 @@
     }
 
     .btn:hover {
-        /* transform: translateY(-3px); */
         background-color: var(--btn-hover-color);
     }
 
@@ -300,58 +264,17 @@
     .learn-more {}
 
     .components-but {
-        /* width: 110px; */
-        /* height: 50px; */
-
         display: block;
-        /* font-size: 16px; */
         color: black;
-
     }
 
-    .components-but:hover {
-        /* transform: translateY(-3px); */
-        /* background-color: var(--btn-hover-color); */
-    }
+    .components-but:hover {}
 
-    .components-but--view-more {
-        /* width: 180px;
-  height: 55px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 16px;
-  letter-spacing: 0; */
-        /* color: #fff; */
-        /* font-weight: 500; */
-        /* margin-right: 10px; */
-        /* box-shadow: 0 0.5rem 1.5rem rgba(22, 28, 45, 0.1); */
-    }
+    .components-but--view-more {}
 
     .components-but--view-more i {
         margin-left: 0.4rem;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     .in-action {
         background-color: var(--header-color);
@@ -362,18 +285,12 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: left 0rem top 8rem;
-        /* background-color: var(primary-color); */
-        /* background-image: url(/assets/wave.svg); */
         overflow: visible;
         background-color: #F0EBDD;
-
-
     }
 
     .hero-section::after {
         content: '';
-        /* border-bottom-left-radius: 50% 5%; */
-        /* border-bottom-right-radius: 10% 20%; */
         position: absolute;
         top: 0;
         left: 0;
@@ -381,11 +298,8 @@
         width: 100%;
         background-color: #F0EBDD;
         height: 30%;
-
     }
 
-
-    /* ==== MEDIA QURIES FOR RESPONSIVE DESIGN ==== */
     @media screen and (min-width: 768px) {
         .toggle_btn {
             display: none;
@@ -664,17 +578,11 @@
                     </div>
                 </div>
             </div>
-
-
-
         </div>
 </section>
-
 {% endblock %}
 {% block content %}
 {% endblock %}
-
-
 {% block footer %}
 <style>
     .md-container {
