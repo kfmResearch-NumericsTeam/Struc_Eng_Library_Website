@@ -65,9 +65,8 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - Getting Started: about.md
+  - 'See in Action': action.md
   - 'Rhino 3D Integration':
-      - Features: features.md
       - Installation:
           - Prerequisites: install/getting_started.md
           - Installation: install/installation.md
@@ -77,7 +76,5 @@ nav:
           - Source Code: install/installation.md
           - Internals: install/installation.md
   - 'URM-Usermat':
-      - about.md
-  - 'Load Generators':
-      - about.md
+      - test.md
   - About: about.md

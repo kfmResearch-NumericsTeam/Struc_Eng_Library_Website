@@ -1,27 +1,13 @@
 {% extends "main.html" %}
-
 {% block tabs %}
-  {{ super() }}
-  <style>
+{{ super() }}
+<style>
 /* ==== CSS VARIABLES ==== */
-:root {
-  --primary-color: #ff1947;
-  --link-color: #ff1947;
-  --btn-hover-color: #ff1947;
-  --lg-heading: white;
-  --text-content: white;
-  --fixed-header-height: 4.5rem;
-
-   --header-color:  #F0EBDD;
-   --header-text-color: black;
-   --color-special:  #ff1947;
-}
-
 
    body {
      /* background-color: var(--header-color); */
-     background-color: white;
-     /* background-color: #F2F0E5; */
+     /* background-color: white; */
+
      /* background-color: #EFE9DA; */
        /* background-color: #FFFFFF; */
      /* background-color: #795649; */
@@ -29,38 +15,13 @@
 
 
    }
-   .md-header {
-     /* background-color: transparent !important; */
-     /* background-color: #F2EFE4 !important; */
-
-     /* background-color: #FFFFFF; */
-     background-color: var(--header-color);
-     color: var(--header-text-color);
-
-     position: initial;
-   }
-   .md-tabs {
-     /* background-color: transparent !important; */
-     background-color: var(--header-color);
-     color: var(--header-text-color);
-   }
-
-   .md-grid {
-     max-width: 68rem;
-   }
-   .md-header__inner {
-     /* display: none; */
 
 
-   }
-
-   .md-search {
-
-   }
-
-    .md-main__inner {
+       .md-main__inner {
       margin: 0;
     }
+
+
 
    h1 {
 
@@ -184,7 +145,7 @@
   transition: 0.4s;
 }
 .btn:hover {
-  transform: translateY(-3px);
+  /* transform: translateY(-3px); */
   background-color: var(--btn-hover-color);
 }
 .view_more_btn {
@@ -283,21 +244,106 @@ footer {
 }
 
 .components {
-background-color: transparent important!;
-     color: black !important;
+background-color: white;
+color: black !important;
 }
+
+.components-title {
+     text-align: center;
+     margin-bottom: 2rem;
+}
+
+.components-feat {
+margin-top: 3rem;
+}
+.components-feat-box {
+    /* background-color: #F2EFE4; */
+    padding: 35px 40px 25px 40px;
+    /* background: #FFFFFF; */
+    /* border: 1px solid #D9E4E6; */
+    border-radius: 5px;
+    text-align: center;
+
+
+    background: #fff;
+    box-shadow: rgb(0 0 0 / 1%) 0 1px 0, rgb(0 0 0 / 3%) 0 0 8px, rgb(0 0 0 / 8%) 0 20px 30px;
+}
+.components-feat-box-text {
+     text-align: left;
+ }
+
+.components-feat-img {
+       border-radius: 50%;
+}
+
+.learn-more {
+     }
+
+.components-but {
+  /* width: 110px; */
+  /* height: 50px; */
+
+  display: block;
+  /* font-size: 16px; */
+  color: black;
+
+}
+.components-but:hover {
+  /* transform: translateY(-3px); */
+  /* background-color: var(--btn-hover-color); */
+}
+.components-but--view-more {
+  /* width: 180px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  letter-spacing: 0; */
+  /* color: #fff; */
+  /* font-weight: 500; */
+  /* margin-right: 10px; */
+  /* box-shadow: 0 0.5rem 1.5rem rgba(22, 28, 45, 0.1); */
+}
+.components-but--view-more i {
+  margin-left: 0.4rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .in-action {
 background-color: var(--header-color);
 }
 
 .hero-section {
-     min-height: 60vh;
+     min-height: 25rem;
      background-repeat: no-repeat;
      background-size: cover;
-     background-position:  left 0rem top 6rem;
+     background-position:  left 0rem top 8rem;
      /* background-color: var(primary-color); */
-     background-image: url(/assets/wave.svg);
+     /* background-image: url(/assets/wave.svg); */
       overflow:visible;
+     background-color:  #F0EBDD;
+
 
 }
 .hero-section::after {
@@ -310,7 +356,7 @@ background-color: var(--header-color);
     z-index: -1;
     width: 100%;
     background-color:  #F0EBDD;
-    height: 40%;
+    height: 30%;
 
 }
 
@@ -451,6 +497,9 @@ background-color: var(--header-color);
               <button class="btn view_more_btn">
                 See in Action
               </button>
+              <button class="btn view_more_btn">
+                About
+              </button>
             </div>
           </div>
           <div class="grid-item-2">
@@ -463,90 +512,137 @@ background-color: var(--header-color);
     </section>
 
     <section class="wrapper components">
-      <div class="container" >
-        <h1 class='main-heading' style='text-align: center;'> Components of StrucEng Library</h1>
-        <div class="grid-cols-3">
-          <div class="grid-col-item">
-            <div class="icon" style="background-color: red;">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                />
-              </svg>
-            </div>
-            <div class="featured_info">
-              <span>Rhinoceros 3D Plugin</span>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-                ratione facilis animi voluptas exercitationem molestiae.
-              </p>
-            </div>
-          </div>
-          <div class="grid-col-item">
+      <div class="container">
+        <h1 class='components-title main-heading' style='text-align: center;'> The StrucEng Library Project</h1>
+        <div class="grid-cols-3 components-feat">
+          <div class="grid-col-item components-feat-box">
             <div class="icon">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M17 14v6m-3-3h6M6 10h2a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2zm10 0h2a2 2 0 002-2V6a2 2 0 00-2-2h-2a2 2 0 00-2 2v2a2 2 0 002 2zM6 20h2a2 2 0 002-2v-2a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2z"
-                />
-              </svg>
+              <img class='components-feat-img' src='https://via.placeholder.com/200' />
             </div>
-            <div class="featured_info">
-              <span>Designed to be modern</span>
+            <div class="featured_info components-feat-box-text">
+              <span>Component</span>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
-                ipsum esse corrupti. Quo, labore debitis!
+                Description
               </p>
+               <div class="components-but components-but--view-more">
+                <p>Learn More<i class="ri-arrow-right-line"></i></p>
+              </div>
+
+
             </div>
           </div>
 
-          <div class="grid-col-item">
+
+          <div class="grid-col-item components-feat-box">
             <div class="icon">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
-                />
-              </svg>
+              <img class='components-feat-img' src='https://via.placeholder.com/200' />
             </div>
-            <div class="featured_info">
-              <span>Documentation for everything</span>
+            <div class="featured_info components-feat-box-text">
+              <span>Component</span>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
-                nostrum voluptate totam ipsa corrupti vero!
+                Description
               </p>
+               <div class="components-but components-but--view-more">
+                <p>Learn More<i class="ri-arrow-right-line"></i></p>
+              </div>
+
+
             </div>
           </div>
-        </div>
+
+
+          <div class="grid-col-item components-feat-box">
+            <div class="icon">
+              <img class='components-feat-img' src='https://via.placeholder.com/200' />
+            </div>
+            <div class="featured_info components-feat-box-text">
+              <span>Component</span>
+              <p>
+                Description
+              </p>
+               <div class="components-but components-but--view-more">
+                <p>Learn More<i class="ri-arrow-right-line"></i></p>
+              </div>
+            </div>
+          </div>
+
+      </div>
+
+      <div class="grid-cols-3 components-feat">
+          <div class="grid-col-item components-feat-box">
+            <div class="icon">
+              <img class='components-feat-img' src='https://via.placeholder.com/200' />
+            </div>
+            <div class="featured_info components-feat-box-text">
+              <span>Component</span>
+              <p>
+                Description
+              </p>
+               <div class="components-but components-but--view-more">
+                <p>Learn More<i class="ri-arrow-right-line"></i></p>
+              </div>
+
+
+            </div>
+          </div>
+
+
+          <div class="grid-col-item components-feat-box">
+            <div class="icon">
+              <img class='components-feat-img' src='https://via.placeholder.com/200' />
+            </div>
+            <div class="featured_info components-feat-box-text">
+              <span>Component</span>
+              <p>
+                Description
+              </p>
+               <div class="components-but components-but--view-more">
+                <p>Learn More<i class="ri-arrow-right-line"></i></p>
+              </div>
+
+
+            </div>
+          </div>
+
+
+          <div class="grid-col-item components-feat-box">
+            <div class="icon">
+              <img class='components-feat-img' src='https://via.placeholder.com/200' />
+            </div>
+            <div class="featured_info components-feat-box-text">
+              <span>Component</span>
+              <p>
+                Description
+              </p>
+               <div class="components-but components-but--view-more">
+                <p>Learn More<i class="ri-arrow-right-line"></i></p>
+              </div>
+            </div>
+          </div>
+
+
+
       </div>
     </section>
-    <section class="wrapper in-action">
-      <div class="container" >
-        <h1 class='main-heading' style='text-align: center;'> See in Action</h1>
-       </div>
-    </section>
+    <!-- <section class="wrapper in-action">
+          <div class="container">
+            <div class="grid-cols-2">
+              <div class="grid-item-1">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/XHOmBV4js_E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+              </div>
+              <div class="grid-item-2">
+
+                <h1 class="main-heading">
+                  See in  <span>Action</span></h1>
+                <p class="info-text">
+                Description to Video
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </section> -->
 
 <!-- <section class="mdx-container">
     <div class="md-grid md-typeset">
@@ -579,6 +675,59 @@ background-color: var(--header-color);
   </section>
  -->
 
+
 {% endblock %}
-{% block content %}{% endblock %}
-{% block footer %}{% endblock %}
+{% block content %}
+
+    {% endblock %}
+    <!-- {% block next_prev %}{% endblock %} -->
+
+{% block footer %}
+<style>
+
+ .md-container {
+   margin-bottom: -5rem;
+   background-color: red;
+
+ }
+     body {
+       background-color: black;
+     }
+     .md-footer__inner {
+       background-color: black !important;
+     }
+     .md-footer {
+     background-color: black !important;
+   }
+
+   .md-footer__inner .md-grid {
+     background-color: black !important;
+   }
+
+   .md-footer {
+    background-color: black !important;
+}
+     .md-footer-meta {
+       background-color: black !important;
+       }
+    nav > .md-footer__inner .md-grid {
+       background-color: black !important;
+    }
+     nav .md-footer__inner {
+       background-color: black !important;
+     }
+
+     .md-footer__inner .md-grid  {
+          background-color: black !important;
+   }
+   .md-footer-meta .md-typeset {
+          background-color: black !important;
+   }
+.md-footer-meta {
+   background-color: black !important;
+   }
+
+    </style>
+{% include "partials/footer.html" %}
+
+    {% endblock %}

@@ -1,0 +1,41 @@
+:root {
+  --primary-color: #ff1947;
+  --link-color: #ff1947;
+  --btn-hover-color: #ff1947;
+  --lg-heading: white;
+  --text-content: white;
+  --fixed-header-height: 4.5rem;
+
+   --header-color:  #F0EBDD;
+   --header-text-color: black;
+   --color-special:  #ff1947;
+}
+
+
+.md-header {
+     /* background-color: transparent !important; */
+     /* background-color: #F2EFE4 !important; */
+
+     /* background-color: #FFFFFF; */
+     background-color: var(--header-color);
+     color: var(--header-text-color);
+     position: initial;
+   }
+   .md-tabs {
+     /* background-color: transparent !important; */
+     background-color: var(--header-color);
+     color: var(--header-text-color);
+   }
+
+   .md-grid {
+     max-width: 68rem;
+   }
+   .md-header__inner {
+     /* display: none; */
+
+   }
+
+   .md-search {
+
+   }
+
