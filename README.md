@@ -6,7 +6,7 @@ https://kfmresearch-numericsteam.github.io/Struc_Eng_Library_Website/
 
 
 ## How to Edit a Page
-This website is built with [mkdocs](https://www.mkdocs.org/). A [Github Runne](https://github.com/kfmResearch-NumericsTeam/Struc_Eng_Library_Website/actions/workflows/deploy.yml) will redeploy the website on a new commit.
+This website is built with [mkdocs](https://www.mkdocs.org/). A [Github Runner](https://github.com/kfmResearch-NumericsTeam/Struc_Eng_Library_Website/actions/workflows/deploy.yml) will redeploy the website on a new commit.
 
 ### Edit Navigation
 Navigation hierarchy is changed in mkdocs.ym file. It resembles the file structure in the ./docs folder.  
