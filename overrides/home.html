@@ -2,312 +2,335 @@
 {% block tabs %}
 {{ super() }}
 <style>
-/* ==== CSS VARIABLES ==== */
+    /* ==== CSS VARIABLES ==== */
 
-   body {
-     /* background-color: var(--header-color); */
-     /* background-color: white; */
+    body {
+        /* background-color: var(--header-color); */
+        /* background-color: white; */
 
-     /* background-color: #EFE9DA; */
-       /* background-color: #FFFFFF; */
-     /* background-color: #795649; */
-     /* font-family: 'Gothic A1', sans-serif !important; */
-
-
-   }
+        /* background-color: #EFE9DA; */
+        /* background-color: #FFFFFF; */
+        /* background-color: #795649; */
+        /* font-family: 'Gothic A1', sans-serif !important; */
 
 
-       .md-main__inner {
-      margin: 0;
+    }
+
+
+    .md-main__inner {
+        margin: 0;
     }
 
 
 
-   h1 {
+    h1 {
 
 
 
-     /* color: #1F1F1F; */
-   }
+        /* color: #1F1F1F; */
+    }
 
     /* Hide main content for now */
     .md-content {
-      display: none;
+        display: none;
     }
 
     /* Hide table of contents */
     @media screen and (min-width: 60em) {
-      .md-sidebar--secondary {
-        display: none;
-      }
+        .md-sidebar--secondary {
+            display: none;
+        }
     }
 
     /* Hide navigation */
     @media screen and (min-width: 76.25em) {
-      .md-sidebar--primary {
-        display: none;
-      }
+        .md-sidebar--primary {
+            display: none;
+        }
     }
-  </style>
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
+</style>
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
 
 
-    <style>
+<style>
     /* ==== "Inter" FONT-FAMILY FROM FONTS.GOOGLE.COM  ==== */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
-/* ==== ROOT RESET ==== */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Inter", sans-serif;
-}
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+    @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
+
+    /* ==== ROOT RESET ==== */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Inter", sans-serif;
+    }
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
 
 
-/* ==== RESET HTML ==== */
+    /* ==== RESET HTML ==== */
 
-/* ==== CONTAINER ==== */
-.container {
-  width: 100%;
-}
-@media screen and (min-width: 1240px) {
-  .container {
-    width: 1240px;
-    margin: 0 auto;
-  }
-}
-/* ==== HEADER ==== */
-.header {
-  height: var(--fixed-header-height);
-  padding: 0 1.7rem;
-}
+    /* ==== CONTAINER ==== */
+    .container {
+        width: 100%;
+    }
 
+    @media screen and (min-width: 1240px) {
+        .container {
+            width: 1240px;
+            margin: 0 auto;
+        }
+    }
 
-/* ====  WRAPPER ==== */
-.wrapper {
-  width: 100%;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  /* margin-bottom: 1rem; */
-}
-.grid-cols-2 {
-  width: 100%;
-  height: 100%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 4rem;
-}
-.grid-item-1 {
-  padding-top: 3rem;
-  padding-left: 1.5rem;
-}
-.main-heading {
-  font-weight: 300;
-  font-size: 40px;
-  line-height: 55px;
-  color: var(--header-text-color);
-}
-.main-heading span {
-  color: var(--primary-color);
-}
-.info-text {
-  margin-top: 1rem;
-  font-size: 19px;
-  line-height: 28px;
-  color: var(--header-text-color);
-  /* color: #334157; */
-}
-.btn_wrapper {
-  margin-top: 2rem;
-  display: flex;
-  width: 100%;
-}
-.btn {
-  width: 110px;
-  height: 50px;
-  background-color: var(--primary-color);
-  display: block;
-  font-size: 16px;
-  color: #fff;
-  text-transform: capitalize;
-  border-radius: 7px;
-  letter-spacing: 1px;
-  transition: 0.4s;
-}
-.btn:hover {
-  /* transform: translateY(-3px); */
-  background-color: var(--btn-hover-color);
-}
-.view_more_btn {
-  width: 180px;
-  height: 55px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 16px;
-  letter-spacing: 0;
-  color: #fff;
-  font-weight: 500;
-  margin-right: 10px;
-  box-shadow: 0 0.5rem 1.5rem rgba(22, 28, 45, 0.1);
-}
-.view_more_btn i {
-  margin-left: 0.7rem;
-}
-.view_more_btn:hover {
-  transition: box-shadow 0.25s ease, transform 0.25s ease;
-}
-.documentation_btn {
-  width: 150px;
-  height: 55px;
-  font-size: 16px;
-  font-weight: 500;
-  color: #fff;
-  letter-spacing: 0;
-  background-color: #e1e7fc;
-  color: #0e2a86;
-  box-shadow: 0 0.5rem 1.5rem rgba(22, 28, 45, 0.1);
-}
-.documentation_btn:hover {
-  background-color: #d7ddf1;
-  transition: box-shadow 0.25s ease, transform 0.25s ease;
-}
-.grid-item-2 {
-  width: 100%;
-  height: 100%;
-}
-.team_img_wrapper {
-  width: 500px;
-  max-width: 100%;
-  height: 440px;
-}
-.team_img_wrapper img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-.grid-cols-3 {
-  width: 100%;
-  height: 100%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 3rem;
-  row-gap: 2rem;
-  padding: 1rem;
-}
-.grid-col-item {
-  height: 100%;
-}
-.icon {
-  width: 100%;
-  line-height: 40px;
-}
-.icon svg {
-  width: 30px;
-  height: 30px;
-  color: #6b85d8;
-}
-.featured_info {
-  width: 100%;
-}
-.featured_info span {
-  width: 100%;
-  display: block;
-  font-size: 21px;
-  line-height: 33px;
-  color: var(header-text-color);
-}
-.featured_info p {
-  display: block;
-  width: 100%;
-  margin-top: 7px;
-  font-weight: 400;
-  color: #334157;
-  line-height: 25px;
-  font-size: 15.5px;
-}
-footer {
-  width: 100%;
-  background-color: var(--primary-color);
-  height: 12px;
-  margin-top: 8rem;
-}
-
-.components {
-background-color: white;
-color: black !important;
-}
-
-.components-title {
-     text-align: center;
-     margin-bottom: 2rem;
-}
-
-.components-feat {
-margin-top: 3rem;
-}
-.components-feat-box {
-    /* background-color: #F2EFE4; */
-    padding: 35px 40px 25px 40px;
-    /* background: #FFFFFF; */
-    /* border: 1px solid #D9E4E6; */
-    border-radius: 5px;
-    text-align: center;
+    /* ==== HEADER ==== */
+    .header {
+        height: var(--fixed-header-height);
+        padding: 0 1.7rem;
+    }
 
 
-    background: #fff;
-    box-shadow: rgb(0 0 0 / 1%) 0 1px 0, rgb(0 0 0 / 3%) 0 0 8px, rgb(0 0 0 / 8%) 0 20px 30px;
-}
-.components-feat-box-text {
-     text-align: left;
- }
+    /* ====  WRAPPER ==== */
+    .wrapper {
+        width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        /* margin-bottom: 1rem; */
+    }
 
-.components-feat-img {
-       border-radius: 50%;
-}
+    .grid-cols-2 {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4rem;
+    }
 
-.learn-more {
-     }
+    .grid-item-1 {
+        padding-top: 3rem;
+        padding-left: 1.5rem;
+    }
 
-.components-but {
-  /* width: 110px; */
-  /* height: 50px; */
+    .main-heading {
+        font-weight: 300;
+        font-size: 40px;
+        line-height: 55px;
+        color: var(--header-text-color);
+    }
 
-  display: block;
-  /* font-size: 16px; */
-  color: black;
+    .main-heading span {
+        color: var(--primary-color);
+    }
 
-}
-.components-but:hover {
-  /* transform: translateY(-3px); */
-  /* background-color: var(--btn-hover-color); */
-}
-.components-but--view-more {
-  /* width: 180px;
+    .info-text {
+        margin-top: 1rem;
+        font-size: 19px;
+        line-height: 28px;
+        color: var(--header-text-color);
+        /* color: #334157; */
+    }
+
+    .btn_wrapper {
+        margin-top: 2rem;
+        display: flex;
+        width: 100%;
+    }
+
+    .btn {
+        width: 110px;
+        height: 50px;
+        background-color: var(--primary-color);
+        display: block;
+        font-size: 16px;
+        color: #fff;
+        text-transform: capitalize;
+        border-radius: 7px;
+        letter-spacing: 1px;
+        transition: 0.4s;
+    }
+
+    .btn:hover {
+        /* transform: translateY(-3px); */
+        background-color: var(--btn-hover-color);
+    }
+
+    .view_more_btn {
+        width: 180px;
+        height: 55px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        letter-spacing: 0;
+        color: #fff;
+        font-weight: 500;
+        margin-right: 10px;
+        box-shadow: 0 0.5rem 1.5rem rgba(22, 28, 45, 0.1);
+    }
+
+    .view_more_btn i {
+        margin-left: 0.7rem;
+    }
+
+    .view_more_btn:hover {
+        transition: box-shadow 0.25s ease, transform 0.25s ease;
+    }
+
+    .documentation_btn {
+        width: 150px;
+        height: 55px;
+        font-size: 16px;
+        font-weight: 500;
+        color: #fff;
+        letter-spacing: 0;
+        background-color: #e1e7fc;
+        color: #0e2a86;
+        box-shadow: 0 0.5rem 1.5rem rgba(22, 28, 45, 0.1);
+    }
+
+    .documentation_btn:hover {
+        background-color: #d7ddf1;
+        transition: box-shadow 0.25s ease, transform 0.25s ease;
+    }
+
+    .grid-item-2 {
+        width: 100%;
+        height: 100%;
+    }
+
+    .team_img_wrapper {
+        width: 500px;
+        max-width: 100%;
+        height: 440px;
+    }
+
+    .team_img_wrapper img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .grid-cols-3 {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 3rem;
+        row-gap: 2rem;
+        padding: 1rem;
+    }
+
+    .grid-col-item {
+        height: 100%;
+    }
+
+    .icon {
+        width: 100%;
+        line-height: 40px;
+    }
+
+    .icon svg {
+        width: 30px;
+        height: 30px;
+        color: #6b85d8;
+    }
+
+    .featured_info {
+        width: 100%;
+    }
+
+    .featured_info span {
+        width: 100%;
+        display: block;
+        font-size: 21px;
+        line-height: 33px;
+        color: var(header-text-color);
+    }
+
+    .featured_info p {
+        display: block;
+        width: 100%;
+        margin-top: 7px;
+        font-weight: 400;
+        color: #334157;
+        line-height: 25px;
+        font-size: 15.5px;
+    }
+
+    .components {
+        background-color: white;
+        color: black !important;
+        margin-top: 2rem;
+    }
+
+    .components-title {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .components-feat {
+        margin-top: 3rem;
+    }
+
+    .components-feat-box {
+        /* background-color: #F2EFE4; */
+        padding: 35px 40px 25px 40px;
+        /* background: #FFFFFF; */
+        /* border: 1px solid #D9E4E6; */
+        border-radius: 5px;
+        text-align: center;
+
+
+        background: #fff;
+        box-shadow: rgb(0 0 0 / 1%) 0 1px 0, rgb(0 0 0 / 3%) 0 0 8px, rgb(0 0 0 / 8%) 0 20px 30px;
+    }
+
+    .components-feat-box-text {
+        text-align: left;
+    }
+
+    .components-feat-img {
+        border-radius: 50%;
+    }
+
+    .learn-more {}
+
+    .components-but {
+        /* width: 110px; */
+        /* height: 50px; */
+
+        display: block;
+        /* font-size: 16px; */
+        color: black;
+
+    }
+
+    .components-but:hover {
+        /* transform: translateY(-3px); */
+        /* background-color: var(--btn-hover-color); */
+    }
+
+    .components-but--view-more {
+        /* width: 180px;
   height: 55px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 16px;
   letter-spacing: 0; */
-  /* color: #fff; */
-  /* font-weight: 500; */
-  /* margin-right: 10px; */
-  /* box-shadow: 0 0.5rem 1.5rem rgba(22, 28, 45, 0.1); */
-}
-.components-but--view-more i {
-  margin-left: 0.4rem;
-}
+        /* color: #fff; */
+        /* font-weight: 500; */
+        /* margin-right: 10px; */
+        /* box-shadow: 0 0.5rem 1.5rem rgba(22, 28, 45, 0.1); */
+    }
+
+    .components-but--view-more i {
+        margin-left: 0.4rem;
+    }
 
 
 
@@ -330,404 +353,378 @@ margin-top: 3rem;
 
 
 
-.in-action {
-background-color: var(--header-color);
-}
+    .in-action {
+        background-color: var(--header-color);
+    }
 
-.hero-section {
-     min-height: 25rem;
-     background-repeat: no-repeat;
-     background-size: cover;
-     background-position:  left 0rem top 8rem;
-     /* background-color: var(primary-color); */
-     /* background-image: url(/assets/wave.svg); */
-      overflow:visible;
-     background-color:  #F0EBDD;
-
-
-}
-.hero-section::after {
-    content: '';
-    /* border-bottom-left-radius: 50% 5%; */
-    /* border-bottom-right-radius: 10% 20%; */
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    width: 100%;
-    background-color:  #F0EBDD;
-    height: 30%;
-
-}
+    .hero-section {
+        min-height: 25rem;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left 0rem top 8rem;
+        /* background-color: var(primary-color); */
+        /* background-image: url(/assets/wave.svg); */
+        overflow: visible;
+        background-color: #F0EBDD;
 
 
-/* ==== MEDIA QURIES FOR RESPONSIVE DESIGN ==== */
-@media screen and (min-width: 768px) {
-  .toggle_btn {
-    display: none;
-  }
-  .nav_menu {
-    display: block;
-  }
-}
+    }
 
-@media screen and (max-width: 768px) {
-  .logo h2 {
-    font-size: 23px;
-  }
-  .nav_menu {
-    position: fixed;
-    width: 93%;
-    height: 100%;
-    display: block;
-    top: 2.5%;
-    right: -100%;
-    background-color: #fff;
-    padding: 3rem;
-    border-radius: 10px;
-    box-shadow: 0 0.5rem 1.5rem rgba(22, 28, 45, 0.1);
-    z-index: 50;
-    transition: 0.4s;
-  }
-  .nav_menu_list {
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: 4rem;
-  }
-  .nav_menu_list .nav_menu_item {
-    margin: 1rem 0;
-  }
-  .nav_menu_item .nav_menu_link {
-    font-size: 18px;
-  }
-  .close_btn {
-    display: block;
-    position: absolute;
-    right: 10%;
-    font-size: 25px;
-    color: #50689e;
-  }
-  .close_btn:hover {
-    color: #000;
-  }
-  .wrapper {
-    padding: 0 0.7rem;
-  }
-  .grid-item-1 {
-    padding-left: 0rem;
-  }
-  .main-heading {
-    font-size: 35px;
-  }
-  .view_more_btn {
-    width: 140px;
-    height: 55px;
-    font-size: 13.5px;
-    margin-right: 1rem;
-  }
-  .grid-cols-3 {
-    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
-  }
-  .featured_info p {
-    line-height: 23px;
-    font-size: 14px;
-  }
-}
+    .hero-section::after {
+        content: '';
+        /* border-bottom-left-radius: 50% 5%; */
+        /* border-bottom-right-radius: 10% 20%; */
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        background-color: #F0EBDD;
+        height: 30%;
 
-@media screen and (max-width: 991px) {
-  .wrapper {
-    padding-top: 3rem;
-  }
-  .grid-cols-2 {
-    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
-  }
-  .grid-item-1 {
-    order: 2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-top: 0;
-  }
-  .main-heading {
-    font-size: 32px;
-    text-align: center;
-    line-height: 40px;
-  }
-  .info-text {
-    font-size: 16px;
-    text-align: center;
-    padding: 0.7rem;
-  }
-  .btn_wrapper {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .grid-item-2 {
-    order: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .team_img_wrapper {
-    width: 350px;
-    height: 350px;
-  }
-  .featured_info span {
-    font-size: 19px;
-  }
-}
+    }
 
+
+    /* ==== MEDIA QURIES FOR RESPONSIVE DESIGN ==== */
+    @media screen and (min-width: 768px) {
+        .toggle_btn {
+            display: none;
+        }
+
+        .nav_menu {
+            display: block;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .logo h2 {
+            font-size: 23px;
+        }
+
+        .nav_menu {
+            position: fixed;
+            width: 93%;
+            height: 100%;
+            display: block;
+            top: 2.5%;
+            right: -100%;
+            background-color: #fff;
+            padding: 3rem;
+            border-radius: 10px;
+            box-shadow: 0 0.5rem 1.5rem rgba(22, 28, 45, 0.1);
+            z-index: 50;
+            transition: 0.4s;
+        }
+
+        .nav_menu_list {
+            flex-direction: column;
+            align-items: flex-start;
+            margin-top: 4rem;
+        }
+
+        .nav_menu_list .nav_menu_item {
+            margin: 1rem 0;
+        }
+
+        .nav_menu_item .nav_menu_link {
+            font-size: 18px;
+        }
+
+        .close_btn {
+            display: block;
+            position: absolute;
+            right: 10%;
+            font-size: 25px;
+            color: #50689e;
+        }
+
+        .close_btn:hover {
+            color: #000;
+        }
+
+        .wrapper {
+            padding: 0 0.7rem;
+        }
+
+        .grid-item-1 {
+            padding-left: 0rem;
+        }
+
+        .main-heading {
+            font-size: 35px;
+        }
+
+        .view_more_btn {
+            width: 140px;
+            height: 55px;
+            font-size: 13.5px;
+            margin-right: 1rem;
+        }
+
+        .grid-cols-3 {
+            grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+        }
+
+        .featured_info p {
+            line-height: 23px;
+            font-size: 14px;
+        }
+    }
+
+    @media screen and (max-width: 991px) {
+        .wrapper {
+            padding-top: 3rem;
+        }
+
+        .grid-cols-2 {
+            grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+        }
+
+        .grid-item-1 {
+            order: 2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding-top: 0;
+        }
+
+        .main-heading {
+            font-size: 32px;
+            text-align: center;
+            line-height: 40px;
+        }
+
+        .info-text {
+            font-size: 16px;
+            text-align: center;
+            padding: 0.7rem;
+        }
+
+        .btn_wrapper {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .grid-item-2 {
+            order: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .team_img_wrapper {
+            width: 350px;
+            height: 350px;
+        }
+
+        .featured_info span {
+            font-size: 19px;
+        }
+    }
 </style>
-    <section class="wrapper hero-section">
-      <div class="container">
+<section class="wrapper hero-section">
+    <div class="container">
         <div class="grid-cols-2">
-          <div class="grid-item-1">
-            <h1 class="main-heading">
-              Your toolbox for the <span>structural analysis</span> of concrete and masonry.
-            </h1>
-            <p class="info-text">
-              The StrucEng Library includes mechanical models, safety concepts, load generator and more for the structural analysis of
-              reinforced concrete and masonry.
-            </p>
-            <div class="btn_wrapper">
-              <button class="btn view_more_btn">
-                See in Action
-              </button>
-              <button class="btn view_more_btn">
-                About
-              </button>
+            <div class="grid-item-1">
+                <h1 class="main-heading">
+                    Your toolbox for the <span>structural analysis</span> of concrete and masonry.
+                </h1>
+                <p class="info-text">
+                    The StrucEng Library includes mechanical models, safety concepts, load generator and more for the
+                    structural analysis of
+                    reinforced concrete and masonry.
+                </p>
+                <div class="btn_wrapper">
+                    <button class="btn view_more_btn">
+                        <a href='/action'>See in Action</a>
+                    </button>
+                    <button class="btn view_more_btn">
+                        <a href='/about'>About</a>
+                    </button>
+                </div>
             </div>
-          </div>
-          <div class="grid-item-2">
-            <div class="team_img_wrapper">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Test.svg" alt="team-img" />
+            <div class="grid-item-2">
+                <div class="team_img_wrapper">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Test.svg" alt="team-img" />
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </section>
+    </div>
+</section>
 
-    <section class="wrapper components">
-      <div class="container">
+<section class="wrapper components">
+    <div class="container">
         <h1 class='components-title main-heading' style='text-align: center;'> The StrucEng Library Project</h1>
         <div class="grid-cols-3 components-feat">
-          <div class="grid-col-item components-feat-box">
-            <div class="icon">
-              <img class='components-feat-img' src='https://via.placeholder.com/200' />
+            <div class="grid-col-item components-feat-box">
+                <div class="icon">
+                    <img class='components-feat-img' src='https://via.placeholder.com/200' />
+                </div>
+                <div class="featured_info components-feat-box-text">
+                    <span>Component</span>
+                    <p>
+                        Description
+                    </p>
+                    <div class="components-but components-but--view-more">
+                        <p>Learn More<i class="ri-arrow-right-line"></i></p>
+                    </div>
+
+
+                </div>
             </div>
-            <div class="featured_info components-feat-box-text">
-              <span>Component</span>
-              <p>
-                Description
-              </p>
-               <div class="components-but components-but--view-more">
-                <p>Learn More<i class="ri-arrow-right-line"></i></p>
-              </div>
 
 
+            <div class="grid-col-item components-feat-box">
+                <div class="icon">
+                    <img class='components-feat-img' src='https://via.placeholder.com/200' />
+                </div>
+                <div class="featured_info components-feat-box-text">
+                    <span>Component</span>
+                    <p>
+                        Description
+                    </p>
+                    <div class="components-but components-but--view-more">
+                        <p>Learn More<i class="ri-arrow-right-line"></i></p>
+                    </div>
+
+
+                </div>
             </div>
-          </div>
 
 
-          <div class="grid-col-item components-feat-box">
-            <div class="icon">
-              <img class='components-feat-img' src='https://via.placeholder.com/200' />
+            <div class="grid-col-item components-feat-box">
+                <div class="icon">
+                    <img class='components-feat-img' src='https://via.placeholder.com/200' />
+                </div>
+                <div class="featured_info components-feat-box-text">
+                    <span>Component</span>
+                    <p>
+                        Description
+                    </p>
+                    <div class="components-but components-but--view-more">
+                        <p>Learn More<i class="ri-arrow-right-line"></i></p>
+                    </div>
+                </div>
             </div>
-            <div class="featured_info components-feat-box-text">
-              <span>Component</span>
-              <p>
-                Description
-              </p>
-               <div class="components-but components-but--view-more">
-                <p>Learn More<i class="ri-arrow-right-line"></i></p>
-              </div>
 
-
-            </div>
-          </div>
-
-
-          <div class="grid-col-item components-feat-box">
-            <div class="icon">
-              <img class='components-feat-img' src='https://via.placeholder.com/200' />
-            </div>
-            <div class="featured_info components-feat-box-text">
-              <span>Component</span>
-              <p>
-                Description
-              </p>
-               <div class="components-but components-but--view-more">
-                <p>Learn More<i class="ri-arrow-right-line"></i></p>
-              </div>
-            </div>
-          </div>
-
-      </div>
-
-      <div class="grid-cols-3 components-feat">
-          <div class="grid-col-item components-feat-box">
-            <div class="icon">
-              <img class='components-feat-img' src='https://via.placeholder.com/200' />
-            </div>
-            <div class="featured_info components-feat-box-text">
-              <span>Component</span>
-              <p>
-                Description
-              </p>
-               <div class="components-but components-but--view-more">
-                <p>Learn More<i class="ri-arrow-right-line"></i></p>
-              </div>
-
-
-            </div>
-          </div>
-
-
-          <div class="grid-col-item components-feat-box">
-            <div class="icon">
-              <img class='components-feat-img' src='https://via.placeholder.com/200' />
-            </div>
-            <div class="featured_info components-feat-box-text">
-              <span>Component</span>
-              <p>
-                Description
-              </p>
-               <div class="components-but components-but--view-more">
-                <p>Learn More<i class="ri-arrow-right-line"></i></p>
-              </div>
-
-
-            </div>
-          </div>
-
-
-          <div class="grid-col-item components-feat-box">
-            <div class="icon">
-              <img class='components-feat-img' src='https://via.placeholder.com/200' />
-            </div>
-            <div class="featured_info components-feat-box-text">
-              <span>Component</span>
-              <p>
-                Description
-              </p>
-               <div class="components-but components-but--view-more">
-                <p>Learn More<i class="ri-arrow-right-line"></i></p>
-              </div>
-            </div>
-          </div>
-
-
-
-      </div>
-    </section>
-    <!-- <section class="wrapper in-action">
-          <div class="container">
-            <div class="grid-cols-2">
-              <div class="grid-item-1">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/XHOmBV4js_E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-              </div>
-              <div class="grid-item-2">
-
-                <h1 class="main-heading">
-                  See in  <span>Action</span></h1>
-                <p class="info-text">
-                Description to Video
-                </p>
-              </div>
-            </div>
-          </div>
-
-        </section> -->
-
-<!-- <section class="mdx-container">
-    <div class="md-grid md-typeset">
-      <div class="mdx-hero">
-
-        <div class="mdx-hero__content">
-          <div class="mdx-hero__content">
-          <h1>Your toolbox for structural analysis of concrete and masonry.</h1>
-          <h2> The StrucEng Library
-          <a
-            href="{{ page.next_page.url | url }}"
-            title="{{ page.next_page.title | e }}"
-            class="md-button md-button--primary"
-          >
-            Quick start
-          </a>
-          <a
-            href="{{ 'insiders/' | url }}"
-            title="Material for MkDocs Insiders"
-            class="md-button"
-          >
-            Get Insiders
-          </a>
         </div>
+
+        <div class="grid-cols-3 components-feat">
+            <div class="grid-col-item components-feat-box">
+                <div class="icon">
+                    <img class='components-feat-img' src='https://via.placeholder.com/200' />
+                </div>
+                <div class="featured_info components-feat-box-text">
+                    <span>Component</span>
+                    <p>
+                        Description
+                    </p>
+                    <div class="components-but components-but--view-more">
+                        <p>Learn More<i class="ri-arrow-right-line"></i></p>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+            <div class="grid-col-item components-feat-box">
+                <div class="icon">
+                    <img class='components-feat-img' src='https://via.placeholder.com/200' />
+                </div>
+                <div class="featured_info components-feat-box-text">
+                    <span>Component</span>
+                    <p>
+                        Description
+                    </p>
+                    <div class="components-but components-but--view-more">
+                        <p>Learn More<i class="ri-arrow-right-line"></i></p>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+            <div class="grid-col-item components-feat-box">
+                <div class="icon">
+                    <img class='components-feat-img' src='https://via.placeholder.com/200' />
+                </div>
+                <div class="featured_info components-feat-box-text">
+                    <span>Component</span>
+                    <p>
+                        Description
+                    </p>
+                    <div class="components-but components-but--view-more">
+                        <p>Learn More<i class="ri-arrow-right-line"></i></p>
+                    </div>
+                </div>
+            </div>
+
 
 
         </div>
-      </div>
-    </div>
-  </section>
- -->
-
+</section>
 
 {% endblock %}
 {% block content %}
+{% endblock %}
 
-    {% endblock %}
-    <!-- {% block next_prev %}{% endblock %} -->
 
 {% block footer %}
 <style>
-
- .md-container {
-   margin-bottom: -5rem;
-   background-color: red;
-
- }
-     body {
-       background-color: black;
-     }
-     .md-footer__inner {
-       background-color: black !important;
-     }
-     .md-footer {
-     background-color: black !important;
-   }
-
-   .md-footer__inner .md-grid {
-     background-color: black !important;
-   }
-
-   .md-footer {
-    background-color: black !important;
-}
-     .md-footer-meta {
-       background-color: black !important;
-       }
-    nav > .md-footer__inner .md-grid {
-       background-color: black !important;
+    .md-container {
+        background-color: white;
     }
-     nav .md-footer__inner {
-       background-color: black !important;
-     }
 
-     .md-footer__inner .md-grid  {
-          background-color: black !important;
-   }
-   .md-footer-meta .md-typeset {
-          background-color: black !important;
-   }
-.md-footer-meta {
-   background-color: black !important;
-   }
+    body {
+        background-color: black;
+    }
 
-    </style>
+    .md-footer__inner {
+        background-color: black !important;
+    }
+
+    .md-footer {
+        background-color: black !important;
+    }
+
+    .md-footer__inner .md-grid {
+        background-color: black !important;
+    }
+
+    .md-footer {
+        background-color: black !important;
+    }
+
+    .md-footer-meta {
+        background-color: black !important;
+    }
+
+    nav>.md-footer__inner .md-grid {
+        background-color: black !important;
+    }
+
+    nav .md-footer__inner {
+        background-color: black !important;
+    }
+
+    .md-footer__inner .md-grid {
+        background-color: black !important;
+    }
+
+    .md-footer-meta .md-typeset {
+        background-color: black !important;
+    }
+
+    .md-footer-meta {
+        background-color: black !important;
+    }
+</style>
 {% include "partials/footer.html" %}
 
-    {% endblock %}
+{% endblock %}

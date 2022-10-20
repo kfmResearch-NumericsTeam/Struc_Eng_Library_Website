@@ -42,9 +42,7 @@ theme:
     text: Roboto
     code: Roboto Mono
   favicon: assets/favicon.png
-  icon:
-    logo: logo
-
+  logo: assets/se.png
 
 
 
@@ -66,15 +64,10 @@ markdown_extensions:
 nav:
   - Home: index.md
   - 'See in Action': action.md
-  - 'Rhino 3D Integration':
+  - 'Rhino 3D Plugin':
       - Installation:
-          - Prerequisites: install/getting_started.md
-          - Installation: install/installation.md
-      - Documentation:
-          - Usage Guide:  install/installation.md
-      - For Developers:
-          - Source Code: install/installation.md
-          - Internals: install/installation.md
+          - Prerequisites: strucenglib_plugin/getting_started.md
+          - Installation: strucenglib_plugin/installation.md
   - 'URM-Usermat':
       - test.md
   - About: about.md
