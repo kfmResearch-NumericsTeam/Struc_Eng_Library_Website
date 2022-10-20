@@ -2,7 +2,7 @@
 
 # Website of StrucEng Library Project
 
-https://kfmresearch-numericsteam.github.io/Struc_Eng_Library_Website/
+Website: https://kfmresearch-numericsteam.github.io/Struc_Eng_Library_Website/
 
 
 ## How to Edit a Page
