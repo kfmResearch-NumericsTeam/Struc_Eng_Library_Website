@@ -4,7 +4,6 @@
 
 Website: https://kfmresearch-numericsteam.github.io/Struc_Eng_Library_Website/
 
-
 ## How to Edit a Page
 This website is built with [mkdocs](https://www.mkdocs.org/). A [Github Runner](https://github.com/kfmResearch-NumericsTeam/Struc_Eng_Library_Website/actions/workflows/deploy.yml) will redeploy the website on a new commit.
 
@@ -22,6 +21,10 @@ Edit a markdown file in the Github file editor. Changes are redeployed upon a ne
 <p align="left">
 <img src="https://user-images.githubusercontent.com/2311941/196965370-33f40404-eb83-4015-a1c6-c1cc770aa6ff.png" alt="strucenglib" width="400"/>
 </p>
+
+
+## Mkdocs Markdown Documentation
+https://squidfunk.github.io/mkdocs-material/reference/images/
 
 
 ## Local Build
@@ -47,3 +50,4 @@ mkdocs serve
 ./overrides.....: html files to overwrite default template
 ./mkdocs.yml....: config file
 ```
+
