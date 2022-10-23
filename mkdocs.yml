@@ -76,10 +76,7 @@ nav:
           - 'GUI Workflow': strucenglib_plugin/usage/guide.md
           - 'Troubleshooting':   strucenglib_plugin/usage/troubleshooting.md
       - Developer:
-          Documentation:
-          - Design Decisions: strucenglib_plugin/developer/developer.md
-          - Building the Plugin: strucenglib_plugin/developer/developer.md
-          - Releasing a new Version: strucenglib_plugin/developer/developer.md
+          Documentation: strucenglib_plugin/developer/developer.md
           Changelog: https://github.com/kfmResearch-NumericsTeam/StrucEng_Library_Plug_in/blob/master/CHANGELOG
           Source Code: https://github.com/kfmResearch-NumericsTeam/StrucEng_Library_Plug_in
   - 'Other Component':

@@ -22,3 +22,28 @@ Edit a markdown file in the Github file editor. Changes are redeployed upon a ne
 <p align="left">
 <img src="https://user-images.githubusercontent.com/2311941/196965370-33f40404-eb83-4015-a1c6-c1cc770aa6ff.png" alt="strucenglib" width="400"/>
 </p>
+
+
+## Local Build
+
+Install python 3 and pip.
+
+```sh
+# 1. create new virtual environment (optional)
+
+# 2. install dependencies
+pip install -r ./github/requirements.txt
+
+# 3. serve content
+mkdocs serve
+
+```
+
+
+## Files and Directories
+```
+./docs..........: Markdown files
+./docs/assets...: Static assets
+./overrides.....: html files to overwrite default template
+./mkdocs.yml....: config file
+```
