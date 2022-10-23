@@ -16,13 +16,15 @@ StrucEng Lib Release management is captured in [/tools/distrib/](https://github.
 
 
 ## Github Workflows
-#### [distrib.sh build (CI)](https://github.com/kfmResearch-NumericsTeam/StrucEng_Library_Plug_in/actions/workflows/distrib_sh_build.yml)
+#### [distrib.sh build (CI)](https://github.com/kfmResearch-NumericsTeam/StrucEng_Library_Plug_in/actions/workflows/distrib_sh_build.yml) [![distrib.sh build](https://github.com/kfmResearch-NumericsTeam/StrucEng_Library_Plug_in/actions/workflows/distrib_sh_build.yml/badge.svg)](https://github.com/kfmResearch-NumericsTeam/StrucEng_Library_Plug_in/actions/workflows/distrib_sh_build.yml)
+
 Main Build workflow, uses vagrant build script to build the project in an ubuntu-box. This ensures continuous integration and checks that the build is reproducible.
 
-#### [dotnet build (CI)](https://github.com/kfmResearch-NumericsTeam/StrucEng_Library_Plug_in/actions/workflows/dotnet_build.yml)
+#### [dotnet build (CI)](https://github.com/kfmResearch-NumericsTeam/StrucEng_Library_Plug_in/actions/workflows/dotnet_build.yml) [![dotnet build](https://github.com/kfmResearch-NumericsTeam/StrucEng_Library_Plug_in/actions/workflows/dotnet_build.yml/badge.svg)](https://github.com/kfmResearch-NumericsTeam/StrucEng_Library_Plug_in/actions/workflows/dotnet_build.yml)
 Builds the solution with dotnet and powershell. This is for testing to ensure a build outside of vagrant box.
 
-#### [Deploy (CD)](https://github.com/kfmResearch-NumericsTeam/StrucEng_Library_Plug_in/actions/workflows/deploy.yml)
+#### [Deploy (CD)](https://github.com/kfmResearch-NumericsTeam/StrucEng_Library_Plug_in/actions/workflows/deploy.yml) [![deploy](https://github.com/kfmResearch-NumericsTeam/StrucEng_Library_Plug_in/actions/workflows/deploy.yml/badge.svg)](https://github.com/kfmResearch-NumericsTeam/StrucEng_Library_Plug_in/actions/workflows/deploy.yml)
+
 This action captures the process to deploy into Rhino store. It builds and tests the source tree with a new version and deploys the artifacts into Rhino store. This can be used if built tools are not installed on the local machine.
 
 ![image](https://user-images.githubusercontent.com/2311941/176892863-7bcb1cce-2459-40bd-90e6-071ec83d77bd.png)
