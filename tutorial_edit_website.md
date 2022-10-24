@@ -13,11 +13,13 @@ This website is built with [mkdocs](https://www.mkdocs.org/). A [Github Runner](
 ```
 
 ## Edit website 
-Navigation hierarchy is changed in mkdocs.yml file. It resembles the file structure in the [./docs](./docs) folder.  
+Navigation hierarchy is changed in [mkdocs.yml](mkdocs.yml) file. It resembles the file structure in the [./docs](./docs) folder.  
 
 <p align="left">
 <img src="https://user-images.githubusercontent.com/2311941/196964646-1871193b-8af9-4129-94d0-f02bd015379e.png" alt="strucenglib" width="400"/>
 </p>
+
+In the example image above, the navigation entry 'See in Action' will serve the file action.md.
 
 ## Edit a Page
 The content pages are written in markdown and are available in the [./docs](./docs) folder.
