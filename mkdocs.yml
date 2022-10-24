@@ -21,7 +21,6 @@ plugins:
       cache_safe: true
       css_files:
         - assets/website/style.css
-        - assets/website/home.css
 
 theme:
   name: material
