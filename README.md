@@ -1,8 +1,14 @@
 [![Publish docs via GitHub Pages](https://github.com/kfmResearch-NumericsTeam/Struc_Eng_Library_Website/actions/workflows/deploy.yml/badge.svg)](https://github.com/kfmResearch-NumericsTeam/Struc_Eng_Library_Website/actions/workflows/deploy.yml)
 
-# Website of StrucEng Library Project
+# StrucEng Library Project
 
-Website: https://kfmresearch-numericsteam.github.io/Struc_Eng_Library_Website/
+Welcome to the StrucEng Library. If you landed here from our website https://strucenglib.ethz.ch/, here is an overview of the most important repositories:
+- Website (this site): [Struc_Eng_Library_Website](https://github.com/kfmResearch-NumericsTeam/Struc_Eng_Library_Website)
+- Rhino 3d plugin: [StrucEng_Library_Plug_in](https://github.com/kfmResearch-NumericsTeam/StrucEng_Library_Plug_in)
+- Connection layer for remote setup: [Struc_Eng_Library_Server](https://github.com/kfmResearch-NumericsTeam/Struc_Eng_Library_Server)
+- Snippet collection: [StrucEng_Library](https://github.com/kfmResearch-NumericsTeam/StrucEng_Library)
+
+---- 
 
 ## How to Edit a Page
 This website is built with [mkdocs](https://www.mkdocs.org/). A [Github Runner](https://github.com/kfmResearch-NumericsTeam/Struc_Eng_Library_Website/actions/workflows/deploy.yml) will redeploy the website on a new commit.
