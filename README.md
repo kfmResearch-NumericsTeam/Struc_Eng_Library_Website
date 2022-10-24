@@ -1,7 +1,5 @@
 [![Publish docs via GitHub Pages](https://github.com/kfmResearch-NumericsTeam/Struc_Eng_Library_Website/actions/workflows/deploy.yml/badge.svg)](https://github.com/kfmResearch-NumericsTeam/Struc_Eng_Library_Website/actions/workflows/deploy.yml)
 
-# StrucEng Library
-
 <img src="docs/assets/logo.transparent.png" width="300">
 
 Welcome to the StrucEng Library. If you landed here from our website https://strucenglib.ethz.ch/, here is an overview of the most important repositories:
