@@ -3,6 +3,15 @@
 
 This website is built with [mkdocs](https://www.mkdocs.org/). A [Github Runner](https://github.com/kfmResearch-NumericsTeam/Struc_Eng_Library_Website/actions/workflows/deploy.yml) will redeploy the website on a new commit.
 
+
+## Files and Directories
+```
+./docs..........: Markdown files
+./docs/assets...: Static assets (images)
+./overrides.....: html files to overwrite default template, landing page
+./mkdocs.yml....: mkdocs config file
+```
+
 ## Edit website 
 Navigation hierarchy is changed in mkdocs.yml file. It resembles the file structure in the [./docs](./docs) folder.  
 
