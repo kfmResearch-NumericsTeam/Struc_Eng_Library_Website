@@ -10,13 +10,12 @@ extra_javascript:
   - assets/website/code.js
 extra_css:
   - assets/website/style.css
-  - assets/website/home.css
 
 plugins:
   - search
   - minify:
-      minify_html: false
-      minify_js: false
+      minify_html: true
+      minify_js: true
       minify_css: true
       htmlmin_opts:
       css_files:
