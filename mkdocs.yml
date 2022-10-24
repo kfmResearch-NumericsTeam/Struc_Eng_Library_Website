@@ -13,11 +13,12 @@ extra_css:
 
 plugins:
   - search
+  # https://github.com/byrnereese/mkdocs-minify-plugin
   - minify:
       minify_html: true
       minify_js: true
       minify_css: true
-      htmlmin_opts:
+      cache_safe: true
       css_files:
         - assets/website/style.css
         - assets/website/home.css
@@ -67,6 +68,7 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.superfences
 
+# Website navigation:
 nav:
   - Home: index.md
   - 'See in Action': action.md
