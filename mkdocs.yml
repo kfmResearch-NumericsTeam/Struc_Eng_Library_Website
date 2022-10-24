@@ -1,5 +1,5 @@
 site_name: The StrucEng Library Project
-site_url: https://kfmresearch-numericsteam.github.io/Struc_Eng_Library_Website
+site_url: https://strucenglib.ethz.ch
 site_description: >-
   StrucEng Library
 
@@ -10,10 +10,6 @@ repo_url: https://github.com/kfmResearch-NumericsTeam/Struc_Eng_Library_Website
 theme:
   name: material
   custom_dir: overrides
-  # features:
-  #   - navigation.tabs
-  #   - navigation.tabs.sticky
-
   language: en
   features:
     - announce.dismiss
