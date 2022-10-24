@@ -6,6 +6,24 @@ site_description: >-
 repo_name: kfmResearch-NumericsTeam/Struc_Eng_Library_Website
 repo_url: https://github.com/kfmResearch-NumericsTeam/Struc_Eng_Library_Website
 
+extra_javascript:
+  - assets/website/code.js
+extra_css:
+  - assets/website/style.css
+  - assets/website/home.css
+
+plugins:
+  - search
+  - minify:
+      minify_html: true
+      minify_js: true
+      minify_css: true
+      htmlmin_opts:
+          remove_comments: true
+      cache_safe: true
+      css_files:
+        - assets/website/style.css
+        - assets/website/home.css
 
 theme:
   name: material
@@ -33,19 +51,12 @@ theme:
     - scheme: default
       primary: blue grey
       accent: red
-
   font:
     text: Roboto
     code: Roboto Mono
-  favicon: assets/favicon.png
-  logo: assets/se.png
+  favicon: assets/website/favicon.png
+  logo: assets/website/se.png
 
-
-
-extra_javascript:
-  - assets/code.js
-extra_css:
-  - assets/style.css
 
 copyright: Copyright &copy; 2022 and later, The StrucEng Library Authors
 
