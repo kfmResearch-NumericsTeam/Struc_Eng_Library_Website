@@ -9,12 +9,3 @@ Welcome to the StrucEng Library. If you landed here from our website https://str
 - Snippet collection: [StrucEng_Library](https://github.com/kfmResearch-NumericsTeam/StrucEng_Library)
 
 For a tutorial on how to make changes on the website, please read [tutorial_edit_website.md](./tutorial_edit_website.md).
-
-## Files and Directories
-```
-./docs..........: Markdown files
-./docs/assets...: Static assets
-./overrides.....: html files to overwrite default template
-./mkdocs.yml....: config file
-```
-
