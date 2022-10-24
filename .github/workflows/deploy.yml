@@ -1,4 +1,4 @@
-name: Publish docs via GitHub Pages
+name: Build Website
 on:
   push:
     branches:
@@ -19,5 +19,5 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           CONFIG_FILE: mkdocs.yml
           EXTRA_PACKAGES: build-base
-          # GITHUB_DOMAIN: github.myenterprise.com
+          GITHUB_DOMAIN: strucenglib.ethz.ch
           REQUIREMENTS: .github/requirements.txt
