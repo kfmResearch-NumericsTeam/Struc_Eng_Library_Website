@@ -44,6 +44,7 @@ theme:
     - search.share
     - search.suggest
     - toc.follow
+    - toc.integrate
   palette:
     - scheme: default
       primary: blue grey
