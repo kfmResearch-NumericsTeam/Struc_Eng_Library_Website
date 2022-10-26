@@ -77,6 +77,9 @@ nav:
       - Installation:
           - Prerequisites: strucenglib_plugin/getting_started.md
           - Installation: strucenglib_plugin/installation.md
+      - Documentation:
+          - Framework: strucenglib_plugin/getting_started.md
+          - Elements: strucenglib_plugin/installation.md          
       - Usage Guide:
           - 'GUI Workflow': strucenglib_plugin/usage/guide.md
           - 'Troubleshooting':   strucenglib_plugin/usage/troubleshooting.md
