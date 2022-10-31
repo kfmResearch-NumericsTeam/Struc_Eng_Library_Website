@@ -95,6 +95,5 @@ nav:
           Documentation: strucenglib_plugin/developer/developer.md
           Changelog: https://github.com/kfmResearch-NumericsTeam/StrucEng_Library_Plug_in/blob/master/CHANGELOG
           Source Code: https://github.com/kfmResearch-NumericsTeam/StrucEng_Library_Plug_in
-  - 'Other Component':
-      - other_component/home.md
+
   - About: about.md
