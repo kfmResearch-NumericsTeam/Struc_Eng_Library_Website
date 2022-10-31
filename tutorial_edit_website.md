@@ -55,4 +55,4 @@ mkdocs serve
 - [![Build Website](https://github.com/kfmResearch-NumericsTeam/Struc_Eng_Library_Website/actions/workflows/deploy.yml/badge.svg)](https://github.com/kfmResearch-NumericsTeam/Struc_Eng_Library_Website/actions/workflows/deploy.yml): Builds website with mkdocs  
 - [![pages-build-deployment](https://github.com/kfmResearch-NumericsTeam/Struc_Eng_Library_Website/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/kfmResearch-NumericsTeam/Struc_Eng_Library_Website/actions/workflows/pages/pages-build-deployment): Deploys website with Github Pages  
 
-
+For a successful change and thus update on the website, both runners have to succeed.
