@@ -27,6 +27,16 @@
     margin: 0;
 }
 
+/* make links right align */
+.md-social {
+    float: right;
+}
+.md-social__link {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+
 .md-logo img {
     /* background-color: blue; */
     padding: 0;
@@ -36,9 +46,9 @@
 }
 
 /* phone 3 cols */
-@media screen and (max-width: 1120px) {
-    body {
-
+@media screen and (max-width: 1118px) {
+    .md-social {
+        float: left;
     }
     .md-nav__title {
         background-color: var(--header-color) !important;
