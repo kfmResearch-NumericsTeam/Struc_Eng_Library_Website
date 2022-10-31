@@ -20,6 +20,39 @@
 }
 
 
+.md-header__button  {
+    /* background-color: red; */
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.md-logo img {
+    /* background-color: blue; */
+    padding: 0;
+    margin: 0;
+    padding-top: 0.3rem !important;
+    height: 1.9rem !important;
+}
+
+/* phone 3 cols */
+@media screen and (max-width: 1120px) {
+    body {
+
+    }
+    .md-nav__title {
+        background-color: var(--header-color) !important;
+    }
+    .md-logo img {
+        content:url("/assets/website/logo-web-0.svg");
+        padding-top: 0 rem !important;
+        margin-top: 0 rem !important;
+        height: 4rem !important;
+        overflow: visible;
+        /* margin-bottom: -2rem; */
+    }
+}
+
 .md-search__input {
     background-color: var(--header-color);
     color: black;
