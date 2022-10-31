@@ -9,6 +9,7 @@
     --header-color:  #F0EBDD;
     --header-text-color: black;
     --color-special:  #ff1947;
+    --container-max-width: 57rem;
 }
 
 :root > * {
@@ -42,7 +43,7 @@ input::placeholder{
 }
 
 .md-grid {
-    max-width: 55rem;
+    max-width: var(--container-max-width);
 }
 
 .md-nav__button .md-logo {
