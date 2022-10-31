@@ -1,4 +1,4 @@
-site_name: The StrucEng Library Project
+site_name: StrucEng Library
 site_url: https://strucenglib.ethz.ch
 site_description: >-
   StrucEng Library
@@ -31,8 +31,8 @@ theme:
     - content.code.annotate
     - content.tabs.link
     - content.tooltips
-    # - header.autohide
-    # - navigation.expand
+    - header.autohide
+    - navigation.expand
     - navigation.indexes
     - navigation.instant
     - navigation.prune
@@ -60,6 +60,17 @@ copyright: Copyright &copy; 2022 and later, The StrucEng Library Authors
 
 extra:
   generator: false
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/kfmResearch-NumericsTeam/Struc_Eng_Library_Website
+      name: StrucEng Library on Github
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/
+      name: StrucEng Library on Twitter
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/
+      name: StrucEng Library on LinkedIn
+
 
 markdown_extensions:
   - attr_list
