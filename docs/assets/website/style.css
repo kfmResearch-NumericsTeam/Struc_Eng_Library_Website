@@ -43,12 +43,11 @@
     margin: 0;
     padding-top: 0.3rem !important;
     height: 1.9rem !important;
-    visibility: visible !important;
 }
-.md-logo {
-    visibility: visible !important;
-    display: inline !important;
-}
+/* .md-logo { */
+/*     visibility: visible !important; */
+/*     display: inline !important; */
+/* } */
 
 .md-icon__drawer {
     margin-right: 1rem;
@@ -64,12 +63,12 @@
 }
 
 .md-logo__drawer img {
-        padding-top: 0 rem !important;
-        margin-top: 0 rem !important;
-        height: 4rem !important;
-        overflow: visible;
-        margin-bottom: -2rem;
-    }
+    padding-top: 0 rem !important;
+    margin-top: 0 rem !important;
+    height: 4rem !important;
+    overflow: visible;
+    margin-bottom: -2rem;
+}
 
 .md-search__input {
     background-color: var(--header-color);

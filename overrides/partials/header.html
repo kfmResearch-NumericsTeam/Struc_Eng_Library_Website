@@ -18,11 +18,6 @@
     aria-label="{{ lang.t('header.title') }}"
   >
 
-      <!-- Button to open drawer -->
-    <label class="md-header__button md-icon md-icon__drawer" for="__drawer">
-        {% include ".icons/material/menu" ~ ".svg" %}
-    </label>
-
     <!-- Link to home -->
     <a
       href="{{ config.extra.homepage | d(nav.homepage.url, true) | url }}"
@@ -34,6 +29,10 @@
       {% include "partials/logo.html" %}
     </a>
 
+    <!-- Button to open drawer -->
+    <label class="md-header__button md-icon" for="__drawer">
+        {% include ".icons/material/menu" ~ ".svg" %}
+    </label>
 
 
     <!-- Header title -->
