@@ -53,6 +53,7 @@ theme:
     code: Roboto Mono
   favicon: assets/website/favicon.png
   logo: assets/website/logo-web-5.svg
+  logo_drawer: assets/website/logo-web-0.svg
 
 
 copyright: Copyright &copy; 2022 and later, The StrucEng Library Authors

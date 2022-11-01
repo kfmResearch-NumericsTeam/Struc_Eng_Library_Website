@@ -43,9 +43,17 @@
     margin: 0;
     padding-top: 0.3rem !important;
     height: 1.9rem !important;
+    visibility: visible !important;
+}
+.md-logo {
+    visibility: visible !important;
+    display: inline !important;
 }
 
-/* phone 3 cols */
+.md-icon__drawer {
+    margin-right: 1rem;
+}
+
 @media screen and (max-width: 1118px) {
     .md-social {
         float: left;
@@ -53,15 +61,15 @@
     .md-nav__title {
         background-color: var(--header-color) !important;
     }
-    .md-logo img {
-        content:url("/assets/website/logo-web-0.svg");
+}
+
+.md-logo__drawer img {
         padding-top: 0 rem !important;
         margin-top: 0 rem !important;
         height: 4rem !important;
         overflow: visible;
-        /* margin-bottom: -2rem; */
+        margin-bottom: -2rem;
     }
-}
 
 .md-search__input {
     background-color: var(--header-color);

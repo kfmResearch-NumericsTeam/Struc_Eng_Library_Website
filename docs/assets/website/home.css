@@ -270,9 +270,11 @@ nav .md-footer__inner {
     background-color: #F0EBDD;
     height: 30%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1030px) {
+
     .hero-section {
-        height: 48rem;
+        /* height: 48rem; */
+
     }
     .logo h2 {
         font-size: 23px;
@@ -299,12 +301,27 @@ nav .md-footer__inner {
         line-height: 23px;
         font-size: 14px;
     }
+
+        .components-feat-box {
+            width: 30rem;
+
+    }
+
+       .components-feat-box {
+           margin: auto;
+    }
+
 }
 
 /* phone 3 cols */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     .hero-section {
-        min-height: 47rem;
+
+    }
+
+    .components-feat-box {
+        width: 100%;
+
     }
 }
 
@@ -362,4 +379,3 @@ nav .md-footer__inner {
         font-size: 19px;
     }
 }
-
