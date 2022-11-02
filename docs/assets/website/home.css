@@ -251,7 +251,7 @@ nav .md-footer__inner {
     background-color: var(--header-color);
 }
 .hero-section {
-    padding-top: 0rem !important;
+    padding-top: 1.5rem !important;
     min-height: 25rem;
     padding-left: 2rem;
     background-repeat: no-repeat;
