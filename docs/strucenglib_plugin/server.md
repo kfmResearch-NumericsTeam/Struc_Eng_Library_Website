@@ -20,7 +20,7 @@ Upon successful launch, the server log shows current requests and console output
 In Rhino 3D, ensure to have strucenglib plugin version 0.0.13 or later installed. If you are updating to version 0.0.13, ensure to re-run `StrucEnglibInstallDependencies` command in Rhino to update all Python dependencies.
 
 ### Enable Remote Computations
- Select _Execute on Server_ and inspect or execute model. The FEA computation will then be executed on remote server.
+ Select _Execute on Remote Server_ and inspect or execute model. The FEA computation will then be executed on remote server.
  
  ![image](https://user-images.githubusercontent.com/2311941/206236821-20bd1d30-06cb-4fd0-94b9-c9b5c9c90b4d.png)
 
