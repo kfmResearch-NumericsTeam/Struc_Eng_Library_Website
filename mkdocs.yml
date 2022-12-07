@@ -91,6 +91,7 @@ nav:
           - Installation: strucenglib_plugin/installation.md
       - Usage Guide:
           - 'GUI Workflow': strucenglib_plugin/usage/guide.md
+          - 'StrucEngLib Server': strucenglib_plugin/server.md
           - 'Troubleshooting':   strucenglib_plugin/usage/troubleshooting.md
       - Developer:
           Documentation: strucenglib_plugin/developer/developer.md
