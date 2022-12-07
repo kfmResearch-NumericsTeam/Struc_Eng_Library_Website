@@ -9,7 +9,7 @@ On ibkpika host, start the server component by executing the file:
 ```
 C:\Program Files\struc_eng_library\strucenglib_server\strucenglib_run_server
 ```
-![image](https://user-images.githubusercontent.com/2311941/206233785-f8bceeaa-f334-497e-8f07-a1c96588aa17.png)
+![image](https://user-images.githubusercontent.com/2311941/206243897-1ed70191-fc74-4dad-8bfe-46c18562a9a8.png)
 
 Upon successful launch, the server log shows current requests and console output.
 
@@ -22,8 +22,6 @@ In Rhino 3D, ensure to have strucenglib plugin version 0.0.13 or later installed
 ### Enable Remote Computations
  Select _Execute on Server_ and inspect or execute model. The FEA computation will then be executed on remote server.
  
- ![image](https://user-images.githubusercontent.com/2311941/206243897-1ed70191-fc74-4dad-8bfe-46c18562a9a8.png)
-
 
 ## Source Code
 The server component is hosted on [Github](https://github.com/kfmResearch-NumericsTeam/Struc_Eng_Library_Server).
