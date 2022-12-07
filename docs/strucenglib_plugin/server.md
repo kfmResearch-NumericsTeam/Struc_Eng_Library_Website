@@ -11,7 +11,7 @@ C:\Program Files\struc_eng_library\strucenglib_server\strucenglib_run_server
 ```
 ![image](https://user-images.githubusercontent.com/2311941/206233785-f8bceeaa-f334-497e-8f07-a1c96588aa17.png)
 
-Upon successful launch, the server log shows current request and console output.
+Upon successful launch, the server log shows current requests and console output.
 
 - During development phase of server, ensure to stop the server once you no longer make requests
 (cancel server log window).
