@@ -51,6 +51,7 @@ dependencies can be checked. Upon failure, an error message is shown.
     - Compas/ Compas Fea no longer recommends to set `%PYTHONPATH%` variable. In case you still have it manually set, please undo.
     - If you changed Rhino's `Modules Search Path` in Python Editor, please remove them ([Why](https://web.archive.org/save/https://compas.dev/compas_fea/latest/gettingstarted/installation.html)) StrucEngLib Plugin installer will take care of python dependencies.
     - The dependency installer installs the [following dependencies](https://github.com/kfmResearch-NumericsTeam/StrucEng_Library_Plug_in/blob/master/StrucEngLib/EmbeddedResources/install.bat).
+    - Upon installation errors, try removing the virtual environment completely. Delete `CONDA_HOME`/envs/strucenglib* directories.
 
 
  
