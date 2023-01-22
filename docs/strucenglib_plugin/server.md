@@ -19,7 +19,8 @@ In Rhino 3D, ensure to have strucenglib plugin version 0.0.13 or later installed
  
  ![image](https://user-images.githubusercontent.com/2311941/206236821-20bd1d30-06cb-4fd0-94b9-c9b5c9c90b4d.png)
 
-Remote computations outsorce Compas FEA `analyse_and_extract` invocations to the server. 
+Remote computations outsorce Compas FEA `analyse_and_extract` invocations to the server.
+
 
 ```python
 from compas_fea.structure import Structure
