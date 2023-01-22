@@ -1,4 +1,4 @@
-
+```py
 # This is auto generated code by StrucEngLib Plugin 0.0.13
 # Find source at https://github.com/kfmResearch-NumericsTeam/StrucEng_Library_Plug_in
 # Code generated at 2023-01-22T19:11:52.3331205+01:00
@@ -93,3 +93,4 @@ rhino.plot_data(mdl, step='step_2', field='sf5', cbar_size=1)
 rhino.plot_data(mdl, step='step_2', field='sm1', cbar_size=1)
 rhino.plot_data(mdl, step='step_2', field='sm2', cbar_size=1)
 rhino.plot_data(mdl, step='step_2', field='sm3', cbar_size=1)
+```
