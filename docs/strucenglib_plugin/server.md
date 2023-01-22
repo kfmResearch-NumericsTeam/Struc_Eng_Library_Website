@@ -37,7 +37,8 @@ mdl = connect.analyse_and_extract('ws://ibkpika.ethz.ch:8080/api/compute', mdl, 
 
 # ...
 ```
+Local and remote invocations of analyse_and_extract accept the same set of parameters.
 
 ## Source Code
-The server component is hosted on [Github](https://github.com/kfmResearch-NumericsTeam/Struc_Eng_Library_Server).
+The server component is hosted on [GitHub](https://github.com/kfmResearch-NumericsTeam/Struc_Eng_Library_Server).
 
