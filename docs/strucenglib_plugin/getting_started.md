@@ -11,7 +11,7 @@ The StrucEngLib Plugin is built as a RhinoCommon plugin. Ensure you have a recen
     - Steps for [ETH Zurich members](eth_zurich_members.md)
 
 ## Install Finite Element Analysis Solver
-The StrucEngLib plugin will issue a Finite Element Analysis Solver under-the-hood. Ensure you have on of the following Finite-Element analyzers solvers installed.
+The StrucEngLib plugin will issue a Finite Element Analysis Solver under-the-hood. Ensure you have on of the following Finite-Element analyzers solvers installed. Note that if you are using [StrucEngLib Remote Server](https://strucenglib.ethz.ch/strucenglib_plugin/server/), no finite element analysis solver is required.
 
 - [Abaqus FEA](https://www.3ds.com/products-services/simulia/products/abaqus/)
 
