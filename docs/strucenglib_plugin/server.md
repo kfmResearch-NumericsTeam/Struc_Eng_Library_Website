@@ -12,7 +12,7 @@ A server instance is deployed on ibkpika host. When connected to ETH network, br
 The server log shows remote computation status logs. You may access the log during remote computations to keep track of computation results.
 
 ## Connecting with StrucEngLibrary Plugin
-In Rhino 3D, ensure to have strucenglib plugin version 0.0.13 or later installed. If you are updating to version 0.0.13, ensure to re-run `StrucEnglibInstallDependencies` command in Rhino to update all Python dependencies.
+In Rhino 3D, ensure to have latest strucenglib plugin version installed. Ensure to re-run `StrucEnglibInstallDependencies` command in Rhino to update all Python dependencies.
 
 ### Enable Remote Computations
 Configure the remote server in _Settings Tab_. Set the remote server to endpoint `ws://ibkpika.ethz.ch:8080/api/compute`.
