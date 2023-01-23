@@ -47,7 +47,7 @@ mdl = connect.analyse_and_extract('ws://ibkpika.ethz.ch:8080/api/compute', mdl, 
 
 # ...
 ```
-Analyse_and_extract can either be executed localy (1.) or remotely (2.).
+Analyse_and_extract can either be executed locally (1.) or remotely (2.).
 Remote and local invocations of analyse_and_extract accept the same set of compas FEA parameters.
 
 ## Source Code
