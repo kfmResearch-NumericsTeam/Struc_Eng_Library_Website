@@ -25,7 +25,8 @@ Configure the remote server in _Settings Tab_. Set the remote server to endpoint
 
  ![image](https://user-images.githubusercontent.com/2311941/206236821-20bd1d30-06cb-4fd0-94b9-c9b5c9c90b4d.png)
 
-
+!!! note
+    - You must be connected to ETH VPN to issue requests to the server (Wifi connection itself is not sufficient
 
 ### Generated Code
 Remote computations outsource Compas FEA `analyse_and_extract` invocations to the server. 
